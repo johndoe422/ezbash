@@ -2,7 +2,7 @@
 
 **The natural language way of interacting with a Linux terminal.**
 
-Skip the man pages. Operate the terminal in natural language, and ezbash generates the exact Linux command you need. Review it, then run it.
+Skip the man pages. Operate the terminal in natural language, and ezbash generates the exact Linux command you need. Review it, then run it - all within the confines of the terminal.
 
 ## Overview
 
