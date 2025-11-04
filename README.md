@@ -162,13 +162,6 @@ Ensure your Gemini API key is set correctly:
 llm keys set gemini
 ```
 
-### Clipboard not working
-
-The clipboard feature requires `xclip`, `xsel`, or `wl-copy`. Install one:
-```bash
-sudo apt install xclip
-```
-
 ## License
 
 MIT License
