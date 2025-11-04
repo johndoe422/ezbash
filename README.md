@@ -12,9 +12,10 @@ ezbash is a command-line utility that translates natural language descriptions i
 
 - 🗣️ Natural language command generation
 - ✅ Human-in-the-loop review before execution
-- 📋 Copy to clipboard option for manual editing
 - 🔒 Safe by design - no commands run without approval
 - ⚡ Powered by Google Gemini API via the `llm` CLI tool
+
+![Screenshot](https://github.com/johndoe422/ezbash/raw/main/screenshots/Screenshot%202025-11-04%20234129.png)
 
 ## Prerequisites
 
