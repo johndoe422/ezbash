@@ -66,12 +66,17 @@ When prompted, paste your API key.
 # Use the efficient Gemini Flash model as default
 llm models default gemini-2.5-flash
 ```
+### 5. Deactivate venv
 
-### 5. Download the Script
+```bash
+deactivate
+```
+
+### 6. Download the Script
 
 Download `ezbash.py` from this repository and place it in your `ezbash` folder.
 
-### 6. Create the Shell Wrapper
+### 7. Create the Shell Wrapper
 
 Edit your bash configuration:
 
@@ -97,7 +102,7 @@ run() {
 
 Replace `/path/to/ezbash` with your actual path (e.g., `/home/username/ezbash`).
 
-### 7. Apply Changes
+### 8. Apply Changes
 
 ```bash
 source ~/.bashrc
