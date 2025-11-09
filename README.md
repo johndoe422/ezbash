@@ -19,7 +19,7 @@ ezbash is a command-line utility that translates natural language descriptions i
 
 ## Prerequisites
 
-- Python 3.6 or higher
+- Python 3.10 or higher
 - A Google Gemini API key ([Get one here](https://aistudio.google.com/app/apikey))
 - Linux/Unix-based system with bash
 
