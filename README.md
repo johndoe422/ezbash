@@ -33,7 +33,7 @@ mkdir ezbash
 cd ezbash
 
 # Create virtual environment
-python3 -m venv ezbashenv
+python -m venv ezbashenv
 
 # Activate the environment
 source ezbashenv/bin/activate
