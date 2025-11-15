@@ -10,7 +10,6 @@ SYSTEM_PROMPT = (
     "to accomplish the task. Do not include explanations, quotes, or markdown formatting."
 )
 
-LLM_COMMAND = "llm '{task}' --extract -s '{system_prompt}'"
 CONTEXT_FILE = os.path.join(os.path.dirname(__file__), "context.txt")
 
 def detect_context():
@@ -72,13 +71,14 @@ def run_llm_command(task):
     print("Generating Command...")
     full_task = f"Context: {context}  Task: {task}"
 
-    command_to_run = LLM_COMMAND.format(
-        task=full_task,
-        system_prompt=SYSTEM_PROMPT
-    )
-
+    # Use list of arguments to avoid shell escaping issues
     try:
-        result = subprocess.run(command_to_run, shell=True, capture_output=True, text=True, check=True)
+        result = subprocess.run(
+            ["llm", full_task, "--extract", "-s", SYSTEM_PROMPT],
+            capture_output=True,
+            text=True,
+            check=True
+        )
         generated_command = result.stdout.strip()
     except subprocess.CalledProcessError as e:
         print(f"\nError during LLM call: {e.stderr.strip()}")
@@ -99,7 +99,7 @@ def run_llm_command(task):
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("Usage: run 'Your natural language command here'")
+        print("Usage: type the 'run' command followed by your natural language input.")
         sys.exit(1)
 
     user_task = " ".join(sys.argv[1:])
