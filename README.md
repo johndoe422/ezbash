@@ -57,6 +57,7 @@ llm install llm-gemini
 # Set your Gemini API key
 llm keys set gemini
 ```
+Note that no masked characters will appear as you paste your key. This is normal behavior, just go ahead and hit Enter key once you've pasted the key. 
 
 When prompted, paste your API key.
 
